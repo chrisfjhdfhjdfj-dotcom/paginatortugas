@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>El Mundo de las Tortugas</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef8ee;
+            color: #29452d;
+        }
+
+
+        header {
+            background: linear-gradient(135deg, #1b5e20, #43a047);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+       
+        nav {
+            background-color: #164d1c;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b9e7bd;
+        }
+        .contenido {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .introduccion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .introduccion h2 {
+            color: #2e7d32;
+            font-size: 30px;
+        }
+
+        .introduccion p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .tarjeta div {
+            padding: 20px;
+        }
+
+        .tarjeta h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        .tarjeta p {
+            line-height: 1.5;
+        }
+
+       
+        .video {
+            margin-top: 55px;
+            text-align: center;
+        }
+
+        .video h2 {
+            color: #2e7d32;
+            font-size: 30px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+        }
+
+       
+        .curiosidades {
+            background-color: #d8efd9;
+            margin-top: 55px;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .curiosidades h2 {
+            color: #256b2a;
+            text-align: center;
+        }
+
+        .curiosidades li {
+            margin: 12px 0;
+            font-size: 17px;
+        }
+
+       
+        footer {
+            background-color: #164d1c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐢 El Mundo de las Tortugas 🐢</h1>
+        <p>Descubre la vida, tipos y curiosidades de estos increíbles animales</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#tipos">Tipos de tortugas</a>
+        <a href="#video">Video</a>
+        <a href="#curiosidades">Curiosidades</a>
+    </nav>
+
+    <div class="contenido">
+
+        <section class="introduccion" id="inicio">
+
+            <h2>Conociendo a las tortugas</h2>
+
+            <p>
+                Las tortugas son reptiles que se caracterizan por tener
+                un caparazón que protege gran parte de su cuerpo.
+                Existen diferentes especies que viven en mares,
+                ríos, lagos y también en tierra.
+            </p>
+
+        </section>
+
+
+        <section id="tipos">
+
+            <h2 style="text-align:center; color:#2e7d32;">
+                Tipos de tortugas
+            </h2>
+
+            <div class="tarjetas">
+
+                <!-- IMAGEN 1 -->
+                <div class="tarjeta">
+
+                    <img src="respi.jpg" alt="Tortuga marina">
+
+                    <div>
+                        <h3>🐢 Tortugas marinas</h3>
+
+                        <p>
+                            Viven principalmente en los océanos.
+                            Son excelentes nadadoras y recorren
+                            grandes distancias durante su vida.
+                        </p>
+                    </div>
+
+                </div>
+
+
+               
+                <div class="tarjeta">
+
+                    <img src="marina.jpg" alt="Tortuga terrestre">
+
+                    <div>
+                        <h3>🌿 Tortugas terrestres</h3>
+
+                        <p>
+                            Habitan en diferentes ambientes terrestres.
+                            Se alimentan principalmente de plantas,
+                            frutas y otros alimentos.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- IMAGEN 3 -->
+                <div class="tarjeta">
+
+                    <img src="nada.jpg" alt="Tortuga de agua dulce">
+
+                    <div>
+                        <h3>💧 Tortugas de agua dulce</h3>
+
+                        <p>
+                            Viven en ríos, lagos y estanques.
+                            Pueden pasar parte de su tiempo dentro
+                            del agua y también fuera de ella.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    
+        <section class="video" id="video">
+
+            <h2>🎥 Conoce más sobre las tortugas</h2>
+
+            <p>
+                Mira este video para aprender más sobre estos fascinantes reptiles.
+            </p>
+
+            <video controls>
+
+                <source src="tortugas.mp4" type="video/mp4">
+
+                Tu navegador no puede reproducir este video.
+
+            </video>
+
+        </section>
+
+
+        <section class="curiosidades" id="curiosidades">
+
+            <h2>🌿 Curiosidades sobre las tortugas</h2>
+
+            <ul>
+
+                <li>Algunas tortugas pueden vivir durante muchas décadas.</li>
+
+                <li>El caparazón forma parte del esqueleto de la tortuga.</li>
+
+                <li>Las tortugas marinas pueden recorrer grandes distancias.</li>
+
+                <li>Existen tortugas de diferentes tamaños y colores.</li>
+
+                <li>Algunas especies pueden esconder la cabeza dentro del caparazón.</li>
+
+            </ul>
+
+        </section>
+
+    </div>
+
+
+    <footer>
+
+        <p>🐢 El Mundo de las Tortugas | Proyecto Web</p>
+
+    </footer>
+
+</body>
+
+</html>
